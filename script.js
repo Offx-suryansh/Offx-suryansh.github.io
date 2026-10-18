@@ -38,8 +38,14 @@ if (menuToggle && navLinks) {
   });
 
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 600) {
+    if (window.innerWidth > 700) {
       closeMenu();
     }
   });
+}
+
+const currentYear = document.querySelector("#current-year");
+
+if (currentYear) {
+  currentYear.textContent = new Date().getFullYear();
 }
