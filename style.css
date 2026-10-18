@@ -44,10 +44,20 @@ h1, h2, h3, p { margin-top: 0; }
 .card-top, .card-bottom { display: flex; justify-content: space-between; color: #9e9ea9; font-size: .66rem; letter-spacing: .12em; }
 .card-mark { font-size: 1.25rem; }
 .monogram { font-size: clamp(5rem, 10vw, 8rem); font-weight: 800; letter-spacing: -.12em; line-height: 1; text-align: center; }
-.monogram-photo { width: 180px; height: 145px; object-fit: contain; margin-inline: auto; }
+
+/* Profile image: small size, replacing SS. */
+.monogram-photo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-inline: auto;
+  display: block;
+}
+
 .card-name { text-align: center; font-size: 1.2rem; font-weight: 650; margin: 0; }
 .card-role { text-align: center; color: #aaaab5; font-size: .85rem; margin: 0; }
 .card-line { height: 1px; background: #3a3b43; margin-block: 15px; }
+.card-bottom { display: flex; justify-content: space-between; }
 .scroll-cue { position: absolute; bottom: 38px; left: 0; display: flex; align-items: center; gap: 12px; color: #888894; font-size: .65rem; letter-spacing: .14em; }
 .scroll-line { width: 34px; height: 1px; background: #777782; }
 .section-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 90px; }
