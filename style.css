@@ -1,3 +1,4 @@
+
 :root {
   color-scheme: dark;
   --bg: #101114;
@@ -43,6 +44,7 @@ h1, h2, h3, p { margin-top: 0; }
 .card-top, .card-bottom { display: flex; justify-content: space-between; color: #9e9ea9; font-size: .66rem; letter-spacing: .12em; }
 .card-mark { font-size: 1.25rem; }
 .monogram { font-size: clamp(5rem, 10vw, 8rem); font-weight: 800; letter-spacing: -.12em; line-height: 1; text-align: center; }
+.monogram-photo { width: 180px; height: 145px; object-fit: contain; margin-inline: auto; }
 .card-name { text-align: center; font-size: 1.2rem; font-weight: 650; margin: 0; }
 .card-role { text-align: center; color: #aaaab5; font-size: .85rem; margin: 0; }
 .card-line { height: 1px; background: #3a3b43; margin-block: 15px; }
