@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Replace the placeholder with your final sitemap URL after deployment.
-Sitemap: https://Offx-suryansh.github.io/sitemap.xml
+sitemap: https://offx-suryansh.github.io/sitemap.xml
