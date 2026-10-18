@@ -1,76 +1,58 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101114">
-  <meta name="robots" content="index, follow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Suryansh Sharma | B.Tech CSE Student &amp; Web Developer</title>
-  <meta name="description" content="Explore Suryansh Sharma's portfolio featuring web development projects, technical skills, and education. B.Tech Computer Science student at Lamrin Tech Skills University Punjab, aspiring to become a full-stack developer.">
+  <title>Suryansh Sharma | Full-Stack Developer</title>
+  <meta name="description" content="Suryansh Sharma's personal portfolio showcasing web development skills, projects, education, internships, and contact information.">
+  <meta name="author" content="Suryansh Sharma">
+  <meta name="theme-color" content="#111114">
 
-  <link rel="canonical" href="https://offx-suryansh.github.io/">
   <link rel="icon" href="assets/og-preview.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/og-preview.png">
-
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Suryansh Sharma Portfolio">
-  <meta property="og:title" content="Suryansh Sharma | B.Tech CSE Student &amp; Web Developer">
-  <meta property="og:description" content="Explore Suryansh Sharma's portfolio featuring web development projects, technical skills, and education.">
-  <meta property="og:url" content="https://offx-suryansh.github.io/">
-  <meta property="og:image" content="https://offx-suryansh.github.io/assets/og-preview.png">
-  <meta property="og:image:secure_url" content="https://offx-suryansh.github.io/assets/og-preview.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:alt" content="Suryansh Sharma's developer portfolio">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Suryansh Sharma | Developer Portfolio">
-  <meta name="twitter:description" content="Web development projects, technical skills, education, and learning by Suryansh Sharma.">
-  <meta name="twitter:image" content="https://offx-suryansh.github.io/assets/og-preview.png">
-  <meta name="twitter:image:alt" content="Suryansh Sharma's developer portfolio">
-
   <link rel="stylesheet" href="style.css">
+
+  <meta property="og:title" content="Suryansh Sharma | Full-Stack Developer">
+  <meta property="og:description" content="Explore my projects, skills, and journey as an aspiring Full-Stack Developer.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-preview.png">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Suryansh Sharma",
+    "jobTitle": "Aspiring Full-Stack Developer",
     "url": "https://offx-suryansh.github.io/",
-    "description": "Computer Science and Engineering student interested in web development and full-stack development.",
-    "email": "mailto:sharmasuryansh159@gmail.com",
     "sameAs": [
       "https://github.com/Offx-suryansh",
       "https://www.linkedin.com/in/offxsuryansh"
-    ],
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "Lamrin Tech Skills University Punjab"
-    },
-    "knowsAbout": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Bootstrap",
-      "Java",
-      "Spring Boot",
-      "MongoDB",
-      "SQL Server",
-      "Web Development"
     ]
   }
   </script>
+
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header">
-    <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="Suryansh Sharma home">Suryansh<span>.</span></a>
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Suryansh Sharma home">
+        suryansh<span>.</span>
+      </a>
 
-      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation" type="button">
-        <span></span><span></span><span></span>
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-controls="nav-links"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
       </button>
 
       <div class="nav-links" id="nav-links">
@@ -78,208 +60,438 @@
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
-        <a href="#contact" class="nav-contact">Contact <span aria-hidden="true">↗</span></a>
+        <a href="#contact" class="nav-contact">Let's talk <span>↗</span></a>
       </div>
     </nav>
   </header>
 
-  <main id="main">
-    <section class="hero section container" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> COMPUTER SCIENCE &amp; ENGINEERING STUDENT</p>
-        <h1>Hi, I'm <span>Suryansh Sharma.</span><br>Building for the web.</h1>
-        <p class="hero-intro">I'm a B.Tech Computer Science student at Lamrin Tech Skills University Punjab, exploring full-stack development and building practical projects as I learn.</p>
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="status-dot"></span> AVAILABLE TO LEARN & BUILD</p>
 
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projects">Explore projects <span aria-hidden="true">↘</span></a>
-          <a class="button button-secondary" href="#contact">Get in touch</a>
-        </div>
+          <h1>
+            Building digital<br>
+            experiences with<br>
+            <span>purpose.</span>
+          </h1>
 
-        <div class="hero-socials" aria-label="Professional profiles">
-          <a href="https://github.com/Offx-suryansh" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          <a href="https://www.linkedin.com/in/offxsuryansh" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-          <span>Based in India</span>
-        </div>
-      </div>
+          <p class="hero-description">
+            I'm Suryansh Sharma, a Computer Science student and aspiring
+            Full-Stack Developer who enjoys turning ideas into useful,
+            thoughtful web experiences.
+          </p>
 
-      <div class="hero-card" aria-label="Portfolio introduction card">
-        <div class="card-top"><span>PERSONAL PORTFOLIO</span><span class="card-mark">✳</span></div>
-        <div class="monogram">SS<span>.</span></div>
-        <p class="card-name">Suryansh Sharma</p>
-        <p class="card-role">Aspiring Full-Stack Developer</p>
-        <div class="card-line"></div>
-        <div class="card-bottom"><span>LEARN</span><span>BUILD</span><span>IMPROVE</span></div>
-      </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span>↗</span></a>
+            <a class="button button-secondary" href="#contact">Get in touch</a>
+          </div>
 
-      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
-    </section>
-
-    <section class="section section-muted" id="about">
-      <div class="container section-grid">
-        <div>
-          <p class="eyebrow">01 / ABOUT ME</p>
-          <h2>Curious by nature.<br><span class="muted-heading">Developer in progress.</span></h2>
-        </div>
-
-        <div class="about-copy">
-          <p>I'm a Computer Science and Engineering student who enjoys learning how websites and applications work, from the user interface to the data behind it.</p>
-          <p>I'm currently developing my skills in web technologies, Java, backend fundamentals, and databases. I use projects to practice, solve problems, and turn ideas into working applications.</p>
-
-          <div class="about-facts">
-            <div><span class="fact-label">EDUCATION</span><strong>B.Tech CSE</strong></div>
-            <div><span class="fact-label">UNIVERSITY</span><strong>Lamrin Tech Skills University Punjab</strong></div>
-            <div><span class="fact-label">EXPECTED GRADUATION</span><strong>2028</strong></div>
-            <div><span class="fact-label">FOCUS</span><strong>Web &amp; Full-Stack Development</strong></div>
+          <div class="hero-socials">
+            <a href="https://github.com/Offx-suryansh" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/offxsuryansh" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
           </div>
         </div>
+
+        <div class="hero-visual">
+          <div class="hero-card" aria-label="Portfolio introduction card">
+            <div class="card-top">
+              <span>PERSONAL PORTFOLIO</span>
+              <span class="card-mark">✳</span>
+            </div>
+
+            <div class="monogram">
+              <img
+                src="assets/profile.png"
+                alt="Suryansh Sharma"
+                class="profile-photo"
+                width="180"
+                height="180"
+              >
+            </div>
+
+            <p class="card-name">Suryansh Sharma</p>
+            <p class="card-role">Aspiring Full-Stack Developer</p>
+
+            <div class="card-line"></div>
+
+            <div class="card-bottom">
+              <span>LEARN</span>
+              <span>BUILD</span>
+              <span>IMPROVE</span>
+            </div>
+          </div>
+
+          <div class="floating-note">
+            <span class="note-icon">✦</span>
+            <div>
+              <strong>Always learning</strong>
+              <span>One project at a time</span>
+            </div>
+          </div>
+
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+        </div>
+      </div>
+
+      <div class="container hero-footer">
+        <span>BASED IN INDIA</span>
+        <span>COMPUTER SCIENCE & ENGINEERING</span>
+        <a href="#about">SCROLL TO EXPLORE ↓</a>
       </div>
     </section>
 
-    <section class="section container" id="skills">
-      <div class="section-heading">
-        <div><p class="eyebrow">02 / TOOLKIT</p><h2>Skills I'm building.</h2></div>
-        <p class="section-note">A practical toolkit that grows with every project.</p>
-      </div>
-
-      <div class="skills-grid">
-        <article class="skill-card"><span class="skill-number">01</span><h3>Web Development</h3><p>HTML · CSS · JavaScript · Bootstrap</p></article>
-        <article class="skill-card"><span class="skill-number">02</span><h3>Programming &amp; Backend</h3><p>Java · Spring Boot (beginner)</p></article>
-        <article class="skill-card"><span class="skill-number">03</span><h3>Databases</h3><p>MongoDB · SQL Server</p></article>
-        <article class="skill-card"><span class="skill-number">04</span><h3>Tools</h3><p>Git · GitHub · VS Code</p></article>
-      </div>
-    </section>
-
-    <section class="section section-muted" id="projects">
+    <section class="section about-section" id="about">
       <div class="container">
         <div class="section-heading">
-          <div><p class="eyebrow">03 / SELECTED WORK</p><h2>Projects &amp; experiments.</h2></div>
-          <p class="section-note">A selection of projects exploring web applications, APIs, and voice-based interfaces.</p>
+          <p class="eyebrow">01 / ABOUT ME</p>
+          <h2>A little about <span>my journey.</span></h2>
         </div>
 
-        <div class="projects-list">
-          <article class="project-card">
-            <div class="project-index">01</div>
-            <div class="project-content">
-              <div class="project-topline"><span class="project-type">WEB APPLICATION</span><span class="project-status">Project</span></div>
-              <h3>Voice Presentation Controller</h3>
-              <p>A web application concept for controlling presentation slides with voice commands, using browser-based speech recognition and navigation controls.</p>
-              <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Web Speech API</span></div>
-              <div class="project-links"><a href="https://github.com/Offx-suryansh/Voice-Presentation-Controller" target="_blank" rel="noopener noreferrer">Find on GitHub ↗</a></div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="large-copy">
+              I'm a B.Tech Computer Science student at Lamrin Tech Skills
+              University Punjab, focused on learning how to build meaningful
+              digital products.
+            </p>
+
+            <p>
+              My interests include Full-Stack Development, Web Development,
+              the MERN stack, and solving practical problems through code.
+              I believe in learning by building, improving through feedback,
+              and keeping things simple and useful.
+            </p>
+
+            <p>
+              I'm currently developing my technical skills, working on
+              projects, and exploring opportunities to gain real-world
+              experience.
+            </p>
+
+            <a class="text-link" href="https://github.com/Offx-suryansh" target="_blank" rel="noopener noreferrer">
+              Explore my GitHub <span>↗</span>
+            </a>
+          </div>
+
+          <div class="about-details">
+            <div class="detail-card">
+              <span class="detail-number">01</span>
+              <div>
+                <h3>Curious by nature</h3>
+                <p>Always exploring technologies and new ways to build.</p>
+              </div>
             </div>
-            <div class="project-symbol" aria-hidden="true">⌁</div>
+
+            <div class="detail-card">
+              <span class="detail-number">02</span>
+              <div>
+                <h3>Focused on growth</h3>
+                <p>Improving through practice, consistency, and feedback.</p>
+              </div>
+            </div>
+
+            <div class="detail-card">
+              <span class="detail-number">03</span>
+              <div>
+                <h3>Building with purpose</h3>
+                <p>Turning concepts into practical and user-friendly projects.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">02 / SKILLS</p>
+          <h2>Tools I use to <span>build.</span></h2>
+          <p class="section-description">
+            Technologies and concepts I'm learning and working with.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <span class="skill-index">01</span>
+            <h3>Frontend</h3>
+            <p>Building interfaces and responsive web pages.</p>
+            <div class="tag-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Bootstrap</span>
+            </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-index">02</div>
-            <div class="project-content">
-              <div class="project-topline"><span class="project-type">DATA &amp; API</span><span class="project-status">Project</span></div>
-              <h3>Crypto Tracker Web Application</h3>
-              <p>A web application designed to display cryptocurrency prices and market trends using external data APIs, with a responsive interface.</p>
-              <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>API Integration</span></div>
-              <div class="project-links"><a href="https://github.com/Offx-suryansh/Crypto-Tracker-Web-Application" target="_blank" rel="noopener noreferrer">Find on GitHub ↗</a></div>
+          <article class="skill-card">
+            <span class="skill-index">02</span>
+            <h3>Backend</h3>
+            <p>Learning application logic and server-side development.</p>
+            <div class="tag-list">
+              <span>Java</span>
+              <span>Node.js</span>
+              <span>Spring Boot</span>
+              <span>REST APIs</span>
             </div>
-            <div class="project-symbol" aria-hidden="true">↗</div>
           </article>
 
-          <article class="project-card">
-            <div class="project-index">03</div>
-            <div class="project-content">
-              <div class="project-topline"><span class="project-type">MOVIE PLATFORM</span><span class="project-status">GitHub</span></div>
-              <h3>CINEVERSE</h3>
-              <p>A movie-focused project. Visit the repository for its current implementation, technology stack, and setup instructions.</p>
-              <div class="tag-list"><span>Movie Platform</span><span>Project Details</span></div>
-              <div class="project-links"><a href="https://github.com/Offx-suryansh/CINEVERSE-" target="_blank" rel="noopener noreferrer">View repository ↗</a></div>
+          <article class="skill-card">
+            <span class="skill-index">03</span>
+            <h3>Database</h3>
+            <p>Working with data storage and database concepts.</p>
+            <div class="tag-list">
+              <span>MongoDB</span>
+              <span>SQL</span>
+              <span>DBMS</span>
             </div>
-            <div class="project-symbol" aria-hidden="true">◉</div>
           </article>
 
-          <article class="project-card">
-            <div class="project-index">04</div>
-            <div class="project-content">
-              <div class="project-topline"><span class="project-type">VOICE ASSISTANT</span><span class="project-status">GitHub</span></div>
-              <h3>ULTRON PRIME</h3>
-              <p>A voice assistant project. Visit its repository to explore the implementation, features, and installation instructions.</p>
-              <div class="tag-list"><span>Voice Assistant</span><span>Project Details</span></div>
-              <div class="project-links"><a href="https://github.com/Offx-suryansh/ULTRON-PRIME-" target="_blank" rel="noopener noreferrer">View repository ↗</a></div>
+          <article class="skill-card">
+            <span class="skill-index">04</span>
+            <h3>Tools & workflow</h3>
+            <p>Using development tools to build and manage projects.</p>
+            <div class="tag-list">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>VS Code</span>
+              <span>Maven</span>
             </div>
-            <div class="project-symbol" aria-hidden="true">⌘</div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section container" id="experience">
-      <div class="section-heading">
-        <div><p class="eyebrow">04 / EXPERIENCE &amp; LEARNING</p><h2>Learning beyond the classroom.</h2></div>
-      </div>
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">03 / SELECTED WORK</p>
+          <h2>Things I'm <span>building.</span></h2>
+          <p class="section-description">
+            A selection of projects that reflect my learning and development.
+          </p>
+        </div>
 
-      <div class="timeline">
-        <article class="timeline-item">
-          <div class="timeline-date">28 NOV 2025 – 12 JAN 2026</div>
-          <div>
-            <h3>Web Development Intern — Internboot</h3>
-            <p>Remote internship involving hands-on learning and assigned web development training projects.</p>
-            <p class="timeline-note">45-day internship</p>
-          </div>
-        </article>
-
-        <article class="timeline-item">
-          <div class="timeline-date">TRAINING</div>
-          <div>
-            <h3>AVR Bootcamp — NIELIT Ropar</h3>
-            <p>Training listed in my learning experience.</p>
-            <p class="timeline-note">Training certificate dated July 31, 2025.</p>
-          </div>
-        </article>
-      </div>
-
-      <div class="cert-box">
-        <div><p class="eyebrow">CERTIFICATES</p><h3>Courses &amp; credentials</h3></div>
-        <div class="cert-content">
-          <div class="certificate-item">
-            <div>
-              <strong>AVR Bootcamp — NIELIT Ropar</strong>
-              <p>Training certificate · July 31, 2025</p>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-visual project-visual-one">
+              <span class="project-symbol">01</span>
+              <span class="project-decoration">MOVIES / DATA / DISCOVERY</span>
             </div>
-            <a class="certificate-link" href="https://lnkd.in/p/g96DqY8F" target="_blank" rel="noopener noreferrer">View certificate on LinkedIn ↗</a>
-          </div>
-
-          <div class="certificate-item">
-            <div>
-              <strong>Web Development Internship — Internboot</strong>
-              <p>Internship certificate · November 28, 2025 – January 12, 2026</p>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>WEB APPLICATION</span>
+                <span>01</span>
+              </div>
+              <h3>Movie Recommendation Platform</h3>
+              <p>
+                A movie discovery and analytics platform concept featuring
+                movie search, recommendations, watchlists, and reviews.
+              </p>
+              <div class="tag-list">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>MongoDB</span>
+                <span>OMDb API</span>
+              </div>
+              <a class="text-link" href="https://github.com/Offx-suryansh" target="_blank" rel="noopener noreferrer">
+                View on GitHub <span>↗</span>
+              </a>
             </div>
-            <a class="certificate-link" href="https://lnkd.in/p/gVNcTk8U" target="_blank" rel="noopener noreferrer">View certificate on LinkedIn ↗</a>
-          </div>
+          </article>
 
-          <p>More learning updates are available on my LinkedIn profile.</p>
+          <article class="project-card">
+            <div class="project-visual project-visual-two">
+              <span class="project-symbol">02</span>
+              <span class="project-decoration">STUDY / ORGANIZE / LEARN</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>STUDENT TOOL</span>
+                <span>02</span>
+              </div>
+              <h3>Student Notes Manager</h3>
+              <p>
+                A student-focused application concept for organizing notes
+                and exploring AI-assisted summaries.
+              </p>
+              <div class="tag-list">
+                <span>MERN</span>
+                <span>MongoDB</span>
+                <span>React</span>
+                <span>Node.js</span>
+              </div>
+              <a class="text-link" href="https://github.com/Offx-suryansh" target="_blank" rel="noopener noreferrer">
+                View on GitHub <span>↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual project-visual-three">
+              <span class="project-symbol">03</span>
+              <span class="project-decoration">DESIGN / CODE / EXPERIENCE</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>FRONTEND PROJECT</span>
+                <span>03</span>
+              </div>
+              <h3>Personal Portfolio</h3>
+              <p>
+                A responsive personal website to showcase my journey,
+                technical interests, projects, and contact information.
+              </p>
+              <div class="tag-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>GitHub Pages</span>
+              </div>
+              <a class="text-link" href="https://github.com/Offx-suryansh" target="_blank" rel="noopener noreferrer">
+                View on GitHub <span>↗</span>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <p class="projects-note">
+          Project descriptions represent the current project direction.
+          Check the repository for the latest implementation and features.
+        </p>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">04 / EXPERIENCE & EDUCATION</p>
+          <h2>Learning beyond <span>the classroom.</span></h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">CURRENT</div>
+            <div class="timeline-content">
+              <p class="timeline-label">INTERNSHIP</p>
+              <h3>InternBoot</h3>
+              <p>
+                Internship experience alongside my academic journey.
+                Refer to my internship documentation for the specific role
+                and responsibilities.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">2024 — 2028</div>
+            <div class="timeline-content">
+              <p class="timeline-label">UNDERGRADUATE EDUCATION</p>
+              <h3>B.Tech — Computer Science & Engineering</h3>
+              <p>Lamrin Tech Skills University Punjab</p>
+              <div class="tag-list">
+                <span>CGPA: 8.66</span>
+                <span>Expected graduation: 2028</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+              <p class="timeline-label">SENIOR SECONDARY EDUCATION</p>
+              <h3>Class XII — CBSE</h3>
+              <p>The Gurukul International School</p>
+              <p>Score: 70%</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">COMPLETED</div>
+            <div class="timeline-content">
+              <p class="timeline-label">SECONDARY EDUCATION</p>
+              <h3>Class X — CBSE</h3>
+              <p>The Gurukul International School</p>
+              <p>Score: 70%</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section approach-section" id="approach">
+      <div class="container approach-grid">
+        <div>
+          <p class="eyebrow">05 / MY APPROACH</p>
+          <h2>Learn. Build.<br><span>Improve.</span></h2>
+        </div>
+
+        <div class="approach-copy">
+          <p>
+            I don't believe in waiting until everything is perfect before
+            starting. I prefer to build, test, learn from mistakes, and
+            keep improving.
+          </p>
+
+          <div class="approach-steps">
+            <div>
+              <span>01</span>
+              <p><strong>Learn</strong> — understand the fundamentals.</p>
+            </div>
+            <div>
+              <span>02</span>
+              <p><strong>Build</strong> — apply knowledge to real projects.</p>
+            </div>
+            <div>
+              <span>03</span>
+              <p><strong>Improve</strong> — refine, test, and grow.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section contact-section" id="contact">
-      <div class="container contact-inner">
-        <p class="eyebrow">05 / CONTACT</p>
-        <h2>Have a project or opportunity<br>in mind?</h2>
-        <p class="contact-copy">I'm interested in learning, collaborating, and connecting with people working on useful web projects.</p>
-        <a class="email-link" href="mailto:sharmasuryansh159@gmail.com">sharmasuryansh159@gmail.com <span aria-hidden="true">↗</span></a>
+      <div class="container contact-panel">
+        <p class="eyebrow">06 / GET IN TOUCH</p>
+        <h2>Have an idea?<br><span>Let's connect.</span></h2>
+        <p class="contact-description">
+          I'm open to connecting with developers, learning from new
+          opportunities, and collaborating on interesting projects.
+        </p>
+
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:sharmasuryansh159@gmail.com">
+            Send me an email <span>↗</span>
+          </a>
+          <a class="button button-secondary" href="https://www.linkedin.com/in/offxsuryansh" target="_blank" rel="noopener noreferrer">
+            Connect on LinkedIn
+          </a>
+        </div>
 
         <div class="contact-links">
           <a href="https://github.com/Offx-suryansh" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
           <a href="https://www.linkedin.com/in/offxsuryansh" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="mailto:sharmasuryansh159@gmail.com">Email ↗</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container footer-inner">
-      <a class="brand" href="#home">Suryansh<span>.</span></a>
-      <p>Designed and built with care by Suryansh Sharma.</p>
-      <a href="#home">Back to top ↑</a>
+      <a class="brand" href="#home">suryansh<span>.</span></a>
+      <p>Designed with intention. Built while learning.</p>
+      <span>© <span id="current-year">2026</span> Suryansh Sharma</span>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
