@@ -1,52 +1,381 @@
-<section class="resume-section">
-  <h2>Selected Projects</h2>
 
-  <div class="resume-item">
-    <strong>Voice Presentation Controller</strong>
-    <p>
-      A browser-based presentation controller that enables hands-free
-      slide navigation using voice commands.
-    </p>
-    <small>HTML · CSS · JavaScript · Web Speech API</small><br>
-    <a href="https://suryanshsharma.runs-at.dev/voice-presentation-controller/"
-       target="_blank" rel="noopener noreferrer">Try Live Demo</a>
-    ·
-    <a href="https://github.com/Offx-suryansh/Voice-Presentation-Controller"
-       target="_blank" rel="noopener noreferrer">Source Code</a>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Resume of Suryansh Sharma, Computer Science and Engineering student and aspiring web developer.">
+  <title>Resume | Suryansh Sharma</title>
+  <link rel="canonical" href="https://suryanshsharma.runs-at.dev/resume.html">
+  <link rel="stylesheet" href="style.css">
 
-  <div class="resume-item">
-    <strong>Crypto Tracker</strong>
-    <p>
-      A responsive cryptocurrency dashboard featuring market prices,
-      market trends, and a currency converter powered by external APIs.
-    </p>
-    <small>HTML · CSS · JavaScript · API Integration</small><br>
-    <a href="https://suryanshsharma.runs-at.dev/crypto-tracker/"
-       target="_blank" rel="noopener noreferrer">Try Live Demo</a>
-    ·
-    <a href="https://github.com/Offx-suryansh/crypto-tracker"
-       target="_blank" rel="noopener noreferrer">Source Code</a>
-  </div>
+  <style>
+    body {
+      background: #f4f4f5;
+      color: #19191d;
+    }
 
-  <div class="resume-item">
-    <strong>ULTRON PRIME</strong>
-    <p>
-      A personal voice assistant project designed to provide
-      voice-driven interactions and useful assistant features.
-    </p>
-    <small>Voice Assistant · Web Technologies</small><br>
-    <a href="https://suryanshsharma.runs-at.dev/ULTRON-PRIME-/"
-       target="_blank" rel="noopener noreferrer">Try Live Demo</a>
-    ·
-    <a href="https://github.com/Offx-suryansh/ULTRON-PRIME-"
-       target="_blank" rel="noopener noreferrer">Source Code</a>
-  </div>
+    .resume-page {
+      max-width: 850px;
+      margin: 42px auto;
+      padding: 48px 56px;
+      background: #fff;
+      box-shadow: 0 12px 45px rgb(0 0 0 / 8%);
+    }
 
-  <div class="resume-item">
-    <strong>CINEVERSE</strong>
-    <p>A movie-focused web project.</p>
-    <a href="https://github.com/Offx-suryansh/CINEVERSE-"
-       target="_blank" rel="noopener noreferrer">Source Code</a>
-  </div>
-</section>
+    .resume-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      border-bottom: 2px solid #24242a;
+      padding-bottom: 22px;
+    }
+
+    .resume-top h1 {
+      margin: 0 0 5px;
+      font-size: 2.35rem;
+      letter-spacing: -.06em;
+    }
+
+    .resume-top p {
+      margin: 0;
+      color: #55555f;
+    }
+
+    .resume-photo {
+      width: 86px;
+      height: 86px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .resume-contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin-top: 14px;
+      font-size: .86rem;
+    }
+
+    .resume-contact a,
+    .resume-item a {
+      color: #2457c5;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .resume-section {
+      margin-top: 24px;
+    }
+
+    .resume-section h2 {
+      font-size: 1rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      border-bottom: 1px solid #d5d5da;
+      padding-bottom: 7px;
+      margin-bottom: 11px;
+    }
+
+    .resume-section p,
+    .resume-section li {
+      font-size: .92rem;
+      line-height: 1.55;
+    }
+
+    .resume-section p {
+      margin-bottom: 8px;
+    }
+
+    .resume-section ul {
+      padding-left: 19px;
+      margin: 6px 0;
+    }
+
+    .resume-item {
+      margin-bottom: 16px;
+    }
+
+    .resume-item strong {
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .resume-item small {
+      color: #5b5b64;
+    }
+
+    .project-links {
+      margin-top: 7px;
+      font-size: .9rem;
+    }
+
+    .resume-print {
+      position: fixed;
+      top: 18px;
+      right: 18px;
+      border: 0;
+      border-radius: 7px;
+      padding: 11px 15px;
+      background: #19191d;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .resume-back {
+      display: inline-block;
+      margin-top: 24px;
+      color: #44444d;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 650px) {
+      .resume-page {
+        margin: 0;
+        padding: 28px 22px;
+      }
+
+      .resume-top {
+        align-items: flex-start;
+      }
+
+      .resume-top h1 {
+        font-size: 1.8rem;
+      }
+
+      .resume-photo {
+        width: 64px;
+        height: 64px;
+      }
+
+      .resume-print {
+        position: static;
+        margin: 14px 0 0 22px;
+      }
+    }
+
+    @media print {
+      @page {
+        size: A4;
+        margin: 14mm;
+      }
+
+      body {
+        background: #fff;
+      }
+
+      .resume-page {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+
+      .resume-print,
+      .resume-back {
+        display: none;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none !important;
+      }
+
+      .resume-item {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <button class="resume-print" type="button" onclick="window.print()">
+    Print / Save as PDF
+  </button>
+
+  <main class="resume-page">
+
+    <header class="resume-top">
+      <div>
+        <h1>Suryansh Sharma</h1>
+        <p>Computer Science &amp; Engineering Student · Aspiring Web Developer</p>
+      </div>
+
+      <img
+        class="resume-photo"
+        src="assets/profile.png"
+        alt="Suryansh Sharma"
+      >
+    </header>
+
+    <div class="resume-contact">
+      <a href="mailto:sharmasuryansh159@gmail.com">
+        sharmasuryansh159@gmail.com
+      </a>
+      <a href="https://github.com/Offx-suryansh" target="_blank" rel="noopener noreferrer">
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/offxsuryansh/" target="_blank" rel="noopener noreferrer">
+        LinkedIn
+      </a>
+      <a href="https://www.instagram.com/offx.suryansh/" target="_blank" rel="noopener noreferrer">
+        Instagram
+      </a>
+      <a href="https://suryanshsharma.runs-at.dev/" target="_blank" rel="noopener noreferrer">
+        Portfolio
+      </a>
+    </div>
+
+    <section class="resume-section">
+      <h2>Professional Summary</h2>
+      <p>
+        Computer Science and Engineering student at Lamrin Tech Skills
+        University Punjab, building practical projects while developing
+        skills in web technologies, Java, backend fundamentals, and databases.
+        Interested in learning through hands-on development and collaborating
+        on useful software projects.
+      </p>
+    </section>
+
+    <section class="resume-section">
+      <h2>Education</h2>
+
+      <div class="resume-item">
+        <strong>B.Tech — Computer Science and Engineering</strong>
+        <small>
+          Lamrin Tech Skills University Punjab · Expected graduation: 2028
+        </small>
+      </div>
+
+      <div class="resume-item">
+        <strong>Class XII</strong>
+        <small>Gurukul International School · Completed 2024</small>
+      </div>
+    </section>
+
+    <section class="resume-section">
+      <h2>Technical Skills</h2>
+      <p><strong>Web:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+      <p><strong>Programming &amp; backend:</strong> Java, Spring Boot (beginner)</p>
+      <p><strong>Databases:</strong> MongoDB, SQL Server</p>
+      <p><strong>Tools:</strong> Git, GitHub, VS Code, IntelliJ IDEA</p>
+    </section>
+
+    <section class="resume-section">
+      <h2>Selected Projects</h2>
+
+      <div class="resume-item">
+        <strong>Voice Presentation Controller</strong>
+        <p>
+          A browser-based presentation controller designed for hands-free
+          slide navigation using voice commands.
+        </p>
+        <small>HTML · CSS · JavaScript · Web Speech API</small>
+        <div class="project-links">
+          <a
+            href="https://suryanshsharma.runs-at.dev/voice-presentation-controller/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Try Live Demo ↗</a>
+          ·
+          <a
+            href="https://github.com/Offx-suryansh/Voice-Presentation-Controller"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Find on GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="resume-item">
+        <strong>Crypto Tracker</strong>
+        <p>
+          A responsive cryptocurrency dashboard displaying market prices,
+          24-hour price movements, market trends, search, charts, and a
+          currency converter using external data APIs.
+        </p>
+        <small>HTML · CSS · JavaScript · API Integration</small>
+        <div class="project-links">
+          <a
+            href="https://suryanshsharma.runs-at.dev/crypto-tracker/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Try Live Demo ↗</a>
+          ·
+          <a
+            href="https://github.com/Offx-suryansh/crypto-tracker"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Find on GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="resume-item">
+        <strong>ULTRON PRIME</strong>
+        <p>
+          A personal voice assistant project focused on voice-driven
+          interactions and assistant features.
+        </p>
+        <small>Voice Assistant · Web Technologies</small>
+        <div class="project-links">
+          <a
+            href="https://suryanshsharma.runs-at.dev/ULTRON-PRIME-/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Try Live Demo ↗</a>
+          ·
+          <a
+            href="https://github.com/Offx-suryansh/ULTRON-PRIME-"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Find on GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="resume-item">
+        <strong>CINEVERSE</strong>
+        <p>
+          A movie-focused web project. Refer to the repository for
+          implementation details.
+        </p>
+        <div class="project-links">
+          <a
+            href="https://github.com/Offx-suryansh/CINEVERSE-"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Find on GitHub ↗</a>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="resume-section">
+      <h2>Training &amp; Certifications</h2>
+
+      <div class="resume-item">
+        <strong>Augmented &amp; Virtual Reality Bootcamp — NIELIT Ropar</strong>
+        <small>Certificate date listed: July 31, 2025</small>
+        <br>
+        <a href="https://lnkd.in/p/g96DqY8F" target="_blank" rel="noopener noreferrer">
+          LinkedIn certificate post
+        </a>
+      </div>
+
+      <div class="resume-item">
+        <strong>Web Development Internship — Internboot</strong>
+        <small>
+          November 28, 2025 – January 12, 2026 · 45-day internship
+        </small>
+        <br>
+        <a href="https://lnkd.in/p/gVNcTk8U" target="_blank" rel="noopener noreferrer">
+          LinkedIn certificate post
+        </a>
+      </div>
+    </section>
+
+    <a class="resume-back" href="index.html">← Back to portfolio</a>
+
+  </main>
+</body>
+</html>
