@@ -1,0 +1,78 @@
+/* Advanced cinematic motion layer. Original palette, sizing and layout are untouched. */
+.cin-word {
+  display: inline-block;
+  transform-origin: 50% 100%;
+  will-change: transform, opacity, filter;
+}
+
+.project-card {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.project-content,
+.project-index,
+.project-symbol {
+  transform-style: preserve-3d;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .skill-card,
+  .project-card,
+  .certificate-item,
+  .timeline-item,
+  .hero-card {
+    will-change: transform;
+  }
+
+  .skill-card {
+    transition:
+      transform 650ms cubic-bezier(.16, 1, .3, 1),
+      background-color 300ms ease;
+  }
+  .skill-card:hover {
+    transform: translate3d(0, -7px, 0) perspective(900px) rotateX(1.5deg);
+  }
+
+  .project-card {
+    transition:
+      transform 700ms cubic-bezier(.16, 1, .3, 1),
+      border-color 300ms ease;
+  }
+  .project-card:hover {
+    transform: translate3d(7px, 0, 0);
+  }
+
+  .project-symbol {
+    transition: transform 700ms cubic-bezier(.16, 1, .3, 1);
+  }
+  .project-card:hover .project-symbol {
+    transform: translate3d(-5px, -3px, 0) rotate(-7deg);
+  }
+
+  .certificate-item {
+    transition: transform 500ms cubic-bezier(.16, 1, .3, 1);
+  }
+  .certificate-item:hover {
+    transform: translate3d(5px, 0, 0);
+  }
+}
+
+@media (max-width: 760px) {
+  .cin-word { will-change: auto; }
+  .project-card { transform-style: flat; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cin-word,
+  .skill-card,
+  .project-card,
+  .certificate-item,
+  .timeline-item,
+  .hero-card {
+    will-change: auto !important;
+    transform: none !important;
+    filter: none !important;
+    clip-path: none !important;
+  }
+}
