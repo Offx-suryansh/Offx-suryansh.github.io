@@ -1,381 +1,628 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index, follow">
-  <meta name="description" content="Resume of Suryansh Sharma, Computer Science and Engineering student and aspiring web developer.">
-  <title>Resume | Suryansh Sharma</title>
-  <link rel="canonical" href="https://suryanshsharma.runs-at.dev/resume.html">
+  <meta name="theme-color" content="#101114">
+  <title>Suryansh Sharma | Computer Science Student & Web Developer</title>
+  <meta name="description" content="Portfolio of Suryansh Sharma, a Computer Science and Engineering student interested in full-stack development, web technologies, and practical software projects.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Suryansh Sharma | Developer Portfolio">
+  <meta property="og:description" content="Explore the projects, skills, education, and training of Suryansh Sharma.">
+  <meta property="og:image" content="https://suryanshsharma.runs-at.dev/assets/profile.png">
+  <meta property="og:image:alt" content="Suryansh Sharma developer portfolio">
+  <meta property="og:url" content="https://suryanshsharma.runs-at.dev/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Suryansh Sharma | Developer Portfolio">
+  <meta name="twitter:description" content="Projects, skills, training, certificates and contact details for Suryansh Sharma.">
+  <link rel="canonical" href="https://suryanshsharma.runs-at.dev/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    body {
-      background: #f4f4f5;
-      color: #19191d;
-    }
-
-    .resume-page {
-      max-width: 850px;
-      margin: 42px auto;
-      padding: 48px 56px;
-      background: #fff;
-      box-shadow: 0 12px 45px rgb(0 0 0 / 8%);
-    }
-
-    .resume-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-      border-bottom: 2px solid #24242a;
-      padding-bottom: 22px;
-    }
-
-    .resume-top h1 {
-      margin: 0 0 5px;
-      font-size: 2.35rem;
-      letter-spacing: -.06em;
-    }
-
-    .resume-top p {
-      margin: 0;
-      color: #55555f;
-    }
-
-    .resume-photo {
-      width: 86px;
-      height: 86px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-
-    .resume-contact {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 18px;
-      margin-top: 14px;
-      font-size: .86rem;
-    }
-
-    .resume-contact a,
-    .resume-item a {
-      color: #2457c5;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
-    .resume-section {
-      margin-top: 24px;
-    }
-
-    .resume-section h2 {
-      font-size: 1rem;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      border-bottom: 1px solid #d5d5da;
-      padding-bottom: 7px;
-      margin-bottom: 11px;
-    }
-
-    .resume-section p,
-    .resume-section li {
-      font-size: .92rem;
-      line-height: 1.55;
-    }
-
-    .resume-section p {
-      margin-bottom: 8px;
-    }
-
-    .resume-section ul {
-      padding-left: 19px;
-      margin: 6px 0;
-    }
-
-    .resume-item {
-      margin-bottom: 16px;
-    }
-
-    .resume-item strong {
-      display: block;
-      margin-bottom: 3px;
-    }
-
-    .resume-item small {
-      color: #5b5b64;
-    }
-
-    .project-links {
-      margin-top: 7px;
-      font-size: .9rem;
-    }
-
-    .resume-print {
-      position: fixed;
-      top: 18px;
-      right: 18px;
-      border: 0;
-      border-radius: 7px;
-      padding: 11px 15px;
-      background: #19191d;
-      color: #fff;
-      cursor: pointer;
-    }
-
-    .resume-back {
-      display: inline-block;
-      margin-top: 24px;
-      color: #44444d;
-      text-decoration: underline;
-    }
-
-    @media (max-width: 650px) {
-      .resume-page {
-        margin: 0;
-        padding: 28px 22px;
-      }
-
-      .resume-top {
-        align-items: flex-start;
-      }
-
-      .resume-top h1 {
-        font-size: 1.8rem;
-      }
-
-      .resume-photo {
-        width: 64px;
-        height: 64px;
-      }
-
-      .resume-print {
-        position: static;
-        margin: 14px 0 0 22px;
-      }
-    }
-
-    @media print {
-      @page {
-        size: A4;
-        margin: 14mm;
-      }
-
-      body {
-        background: #fff;
-      }
-
-      .resume-page {
-        max-width: none;
-        margin: 0;
-        padding: 0;
-        box-shadow: none;
-      }
-
-      .resume-print,
-      .resume-back {
-        display: none;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none !important;
-      }
-
-      .resume-item {
-        break-inside: avoid;
-      }
-    }
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Suryansh Sharma",
+    "description": "Computer Science and Engineering student interested in full-stack and web development.",
+    "email": "mailto:sharmasuryansh159@gmail.com",
+    "url": "https://suryanshsharma.runs-at.dev/",
+    "sameAs": [
+      "https://cvin.bio/suryansh-sharma",
+      "https://github.com/Offx-suryansh",
+      "https://www.linkedin.com/in/offxsuryansh/",
+      "https://www.instagram.com/offx.suryansh/"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Lamrin Tech Skills University Punjab"
+    },
+    "knowsAbout": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "Java",
+      "Spring Boot",
+      "MongoDB",
+      "SQL Server",
+      "Web Development"
+    ]
+  }
+  </script>
 </head>
-
 <body>
-  <button class="resume-print" type="button" onclick="window.print()">
-    Print / Save as PDF
-  </button>
-
-  <main class="resume-page">
-
-    <header class="resume-top">
-      <div>
-        <h1>Suryansh Sharma</h1>
-        <p>Computer Science &amp; Engineering Student · Aspiring Web Developer</p>
-      </div>
-
-      <img
-        class="resume-photo"
-        src="assets/profile.png"
-        alt="Suryansh Sharma"
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Suryansh Sharma home">
+        Suryansh<span>.</span>
+      </a>
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-expanded="false"
+        aria-controls="nav-links"
+        aria-label="Toggle navigation"
       >
-    </header>
-
-    <div class="resume-contact">
-      <a href="mailto:sharmasuryansh159@gmail.com">
-        sharmasuryansh159@gmail.com
-      </a>
-      <a href="https://github.com/Offx-suryansh" target="_blank" rel="noopener noreferrer">
-        GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/offxsuryansh/" target="_blank" rel="noopener noreferrer">
-        LinkedIn
-      </a>
-      <a href="https://www.instagram.com/offx.suryansh/" target="_blank" rel="noopener noreferrer">
-        Instagram
-      </a>
-      <a href="https://suryanshsharma.runs-at.dev/" target="_blank" rel="noopener noreferrer">
-        Portfolio
-      </a>
-    </div>
-
-    <section class="resume-section">
-      <h2>Professional Summary</h2>
-      <p>
-        Computer Science and Engineering student at Lamrin Tech Skills
-        University Punjab, building practical projects while developing
-        skills in web technologies, Java, backend fundamentals, and databases.
-        Interested in learning through hands-on development and collaborating
-        on useful software projects.
-      </p>
-    </section>
-
-    <section class="resume-section">
-      <h2>Education</h2>
-
-      <div class="resume-item">
-        <strong>B.Tech — Computer Science and Engineering</strong>
-        <small>
-          Lamrin Tech Skills University Punjab · Expected graduation: 2028
-        </small>
-      </div>
-
-      <div class="resume-item">
-        <strong>Class XII</strong>
-        <small>Gurukul International School · Completed 2024</small>
-      </div>
-    </section>
-
-    <section class="resume-section">
-      <h2>Technical Skills</h2>
-      <p><strong>Web:</strong> HTML, CSS, JavaScript, Bootstrap</p>
-      <p><strong>Programming &amp; backend:</strong> Java, Spring Boot (beginner)</p>
-      <p><strong>Databases:</strong> MongoDB, SQL Server</p>
-      <p><strong>Tools:</strong> Git, GitHub, VS Code, IntelliJ IDEA</p>
-    </section>
-
-    <section class="resume-section">
-      <h2>Selected Projects</h2>
-
-      <div class="resume-item">
-        <strong>Voice Presentation Controller</strong>
-        <p>
-          A browser-based presentation controller designed for hands-free
-          slide navigation using voice commands.
-        </p>
-        <small>HTML · CSS · JavaScript · Web Speech API</small>
-        <div class="project-links">
-          <a
-            href="https://suryanshsharma.runs-at.dev/voice-presentation-controller/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Try Live Demo ↗</a>
-          ·
-          <a
-            href="https://github.com/Offx-suryansh/Voice-Presentation-Controller"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Find on GitHub ↗</a>
-        </div>
-      </div>
-
-      <div class="resume-item">
-        <strong>Crypto Tracker</strong>
-        <p>
-          A responsive cryptocurrency dashboard displaying market prices,
-          24-hour price movements, market trends, search, charts, and a
-          currency converter using external data APIs.
-        </p>
-        <small>HTML · CSS · JavaScript · API Integration</small>
-        <div class="project-links">
-          <a
-            href="https://suryanshsharma.runs-at.dev/crypto-tracker/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Try Live Demo ↗</a>
-          ·
-          <a
-            href="https://github.com/Offx-suryansh/crypto-tracker"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Find on GitHub ↗</a>
-        </div>
-      </div>
-
-      <div class="resume-item">
-        <strong>ULTRON WEB</strong>
-        <p>
-          A personal voice assistant project focused on voice-driven
-          interactions and assistant features.
-        </p>
-        <small>Voice Assistant · Web Technologies</small>
-        <div class="project-links">
-          <a
-            href="https://suryanshsharma.runs-at.dev/ULTRON-WEB/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Try Live Demo ↗</a>
-          ·
-          <a
-            href="https://github.com/Offx-suryansh/ULTRON-PRIME-"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Find on GitHub ↗</a>
-        </div>
-      </div>
-
-      <div class="resume-item">
-        <strong>CINEVERSE</strong>
-        <p>
-          A movie-focused web project. Refer to the repository for
-          implementation details.
-        </p>
-        <div class="project-links">
-          <a
-            href="https://github.com/Offx-suryansh/CINEVERSE-"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Find on GitHub ↗</a>
-        </div>
-      </div>
-
-    </section>
-
-    <section class="resume-section">
-      <h2>Training &amp; Certifications</h2>
-
-      <div class="resume-item">
-        <strong>Augmented &amp; Virtual Reality Bootcamp — NIELIT Ropar</strong>
-        <small>Certificate date listed: July 31, 2025</small>
-        <br>
-        <a href="https://lnkd.in/p/g96DqY8F" target="_blank" rel="noopener noreferrer">
-          LinkedIn certificate post
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a
+          href="https://cvin.bio/suryansh-sharma"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav-profile"
+        >
+          CVIn.bio <span aria-hidden="true">↗</span>
+        </a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#terminal">Terminal</a>
+        <a href="#contact" class="nav-contact">
+          Contact <span aria-hidden="true">↗</span>
         </a>
       </div>
-
-      <div class="resume-item">
-        <strong>Web Development Internship — Internboot</strong>
-        <small>
-          November 28, 2025 – January 12, 2026 · 45-day internship
-        </small>
-        <br>
-        <a href="https://lnkd.in/p/gVNcTk8U" target="_blank" rel="noopener noreferrer">
-          LinkedIn certificate post
-        </a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero section container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          COMPUTER SCIENCE & ENGINEERING STUDENT
+        </p>
+        <h1>
+          Hi, I'm <span>Suryansh Sharma.</span><br>
+          Building for the web.
+        </h1>
+        <p class="hero-intro">
+          I’m a B.Tech Computer Science student at Lamrin Tech Skills
+          University Punjab, exploring full-stack development and
+          building practical projects as I learn.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">
+            Explore projects <span aria-hidden="true">↘</span>
+          </a>
+          <a class="button button-secondary" href="#contact">
+            Get in touch
+          </a>
+          <a class="button button-secondary" href="#resume">
+            Resume ↗
+          </a>
+          <a
+            class="button button-secondary"
+            href="https://cvin.bio/suryansh-sharma"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            My Profile ↗
+          </a>
+        </div>
+        <div class="hero-socials" aria-label="Professional profiles">
+          <a href="https://github.com/Offx-suryansh" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/offxsuryansh/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://www.instagram.com/offx.suryansh/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+          <a href="https://cvin.bio/suryansh-sharma" target="_blank" rel="noopener noreferrer">CVIn.bio ↗</a>
+          <span>Based in India</span>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Portfolio introduction card">
+        <div class="card-top">
+          <span>PERSONAL PORTFOLIO</span>
+          <span class="card-mark">✳</span>
+        </div>
+        <img
+          class="monogram monogram-photo"
+          src="assets/profile.png"
+          alt="Profile picture of Suryansh Sharma"
+        >
+        <p class="card-name">Suryansh Sharma</p>
+        <p class="card-role">Aspiring Full-Stack Developer</p>
+        <div class="card-line"></div>
+        <div class="card-bottom">
+          <span>LEARN</span>
+          <span>BUILD</span>
+          <span>IMPROVE</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about">
+        <span class="scroll-line"></span>
+        SCROLL TO EXPLORE
+      </a>
+    </section>
+    <section class="section section-muted" id="about">
+      <div class="container section-grid">
+        <div>
+          <p class="eyebrow">01 / ABOUT ME</p>
+          <h2>
+            Curious by nature.<br>
+            <span class="muted-heading">Developer in progress.</span>
+          </h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            I’m a Computer Science and Engineering student who enjoys
+            learning how websites and applications work, from the user
+            interface to the data behind it.
+          </p>
+          <p>
+            I’m currently developing my skills in web technologies,
+            Java, backend fundamentals, and databases. I use projects
+            to practice, solve problems, and turn ideas into working
+            applications.
+          </p>
+          <div class="about-facts">
+            <div>
+              <span class="fact-label">EDUCATION</span>
+              <strong>B.Tech CSE</strong>
+            </div>
+            <div>
+              <span class="fact-label">UNIVERSITY</span>
+              <strong>Lamrin Tech Skills University</strong>
+            </div>
+            <div>
+              <span class="fact-label">EXPECTED GRADUATION</span>
+              <strong>2028</strong>
+            </div>
+            <div>
+              <span class="fact-label">FOCUS</span>
+              <strong>Web & Full-Stack Development</strong>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
-    <a class="resume-back" href="index.html">← Back to portfolio</a>
-
+    <section class="section container" id="skills">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">02 / TOOLKIT</p>
+          <h2>Skills I'm building.</h2>
+        </div>
+        <p class="section-note">
+          A practical toolkit that grows with every project.
+        </p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <span class="skill-number">01</span>
+          <h3>Web Development</h3>
+          <p>HTML · CSS · JavaScript · Bootstrap</p>
+        </article>
+        <article class="skill-card">
+          <span class="skill-number">02</span>
+          <h3>Programming & Backend</h3>
+          <p>Java · Spring Boot (beginner)</p>
+        </article>
+        <article class="skill-card">
+          <span class="skill-number">03</span>
+          <h3>Databases</h3>
+          <p>MongoDB · SQL Server</p>
+        </article>
+        <article class="skill-card">
+          <span class="skill-number">04</span>
+          <h3>Tools</h3>
+          <p>Git · GitHub · VS Code · IntelliJ IDEA</p>
+        </article>
+      </div>
+    </section>    <section class="section section-muted" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 / SELECTED WORK</p>
+            <h2>Projects & experiments.</h2>
+          </div>
+          <p class="section-note">
+            Selected work, live experiments, and code you can explore.
+          </p>
+        </div>
+        <div class="projects-list">
+          <article class="project-card">
+            <div class="project-index">01</div>
+            <div class="project-content">
+              <div class="project-topline">
+              <div class="project-image-box">
+                <img src="assets/project-voice-controller.png" alt="Voice Presentation Controller project preview" loading="lazy">
+                <span class="project-image-placeholder">ADD PROJECT IMAGE</span>
+              </div>
+                <span class="project-type">WEB APPLICATION</span>
+                <span class="project-status">Project</span>
+              </div>
+              <h3>Voice Presentation Controller</h3>
+              <p>
+                A web application concept for controlling presentation
+                slides with voice commands, using browser-based speech
+                recognition and navigation controls.
+              </p>
+              <div class="tag-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Web Speech API</span>
+              </div>
+              <div class="project-links">
+                <a class="project-live-link" href="https://suryanshsharma.runs-at.dev/voice-presentation-controller/" target="_blank" rel="noopener noreferrer">Try live demo ↗</a>
+                <a href="https://github.com/Offx-suryansh/Voice-Presentation-Controller" target="_blank" rel="noopener noreferrer">Find on GitHub ↗</a>
+              </div>
+            </div>
+            <div class="project-symbol" aria-hidden="true">⌁</div>
+          </article>
+          <article class="project-card">
+            <div class="project-index">02</div>
+            <div class="project-content">
+              <div class="project-topline">
+              <div class="project-image-box">
+                <img src="assets/project-ultron.png" alt="ULTRON project preview" loading="lazy">
+                <span class="project-image-placeholder">ADD PROJECT IMAGE</span>
+              </div>
+                <span class="project-type">WEB-BASED VOICE ASSISTANT</span>
+                <span class="project-status">Web Version Live</span>
+              </div>
+              <h3>ULTRON WEB</h3>
+              <p>
+                ULTRON WEB is the browser-based version of my voice
+                assistant project, designed to bring the ULTRON assistant
+                experience to the web. The separate desktop EXE version
+                is currently under development.
+              </p>
+              <div class="tag-list">
+                <span>Web Version</span>
+                <span>Browser-Based</span>
+                <span>Voice Assistant</span>
+                <span>Project Details</span>
+              </div>
+              <div class="project-links">
+                <a
+                  class="project-live-link"
+                  href="https://suryanshsharma.runs-at.dev/ULTRON-WEB/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Try web version ↗
+                </a>
+                <a
+                  href="https://github.com/Offx-suryansh/ULTRON-PRIME-"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View repository ↗
+                </a>
+              </div>
+            </div>
+            <div class="project-symbol" aria-hidden="true">⌘</div>
+          </article>
+          <article class="project-card">
+            <div class="project-index">03</div>
+            <div class="project-content">
+              <div class="project-topline">
+              <div class="project-image-box">
+                <img src="assets/project-crypto-tracker.png" alt="Crypto Tracker project preview" loading="lazy">
+                <span class="project-image-placeholder">ADD PROJECT IMAGE</span>
+              </div>
+                <span class="project-type">CRYPTO & FINANCE</span>
+                <span class="project-status">Live</span>
+              </div>
+              <h3>Crypto Tracker</h3>
+              <p>
+                A responsive crypto dashboard to explore cryptocurrency
+                prices, market movements, and convert currencies using
+                external APIs.
+              </p>
+              <div class="tag-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>CoinGecko API</span>
+                <span>Currency API</span>
+              </div>
+              <div class="project-links">
+                <a class="project-live-link" href="https://suryanshsharma.runs-at.dev/crypto-tracker/" target="_blank" rel="noopener noreferrer">Try live demo ↗</a>
+                <a href="https://github.com/Offx-suryansh/crypto-tracker" target="_blank" rel="noopener noreferrer">Find on GitHub ↗</a>
+              </div>
+            </div>
+            <div class="project-symbol" aria-hidden="true">↗</div>
+          </article>
+          <article class="project-card">
+            <div class="project-index">04</div>
+            <div class="project-content">
+              <div class="project-topline">
+              <div class="project-image-box">
+                <img src="assets/project-cineverse.png" alt="CINEVERSE project preview" loading="lazy">
+                <span class="project-image-placeholder">ADD PROJECT IMAGE</span>
+              </div>
+                <span class="project-type">MOVIE DISCOVERY PLATFORM</span>
+                <span class="project-status">Live</span>
+              </div>
+              <h3>CINEVERSE</h3>
+              <p>
+                A movie discovery and recommendation platform where users
+                can explore trending and popular films, search movies, view
+                details, build a personal watchlist, and share reviews.
+              </p>
+              <div class="tag-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>TMDB API</span>
+                <span>LocalStorage</span>
+              </div>
+              <p class="timeline-note">
+                <strong>TMDB access note:</strong> Movie data may be blocked
+                on some networks or in some regions. If movies do not load,
+                try accessing the demo with a VPN.
+              </p>
+              <div class="project-links">
+                <a class="project-live-link" href="https://suryanshsharma.runs-at.dev/CINEVERSE/" target="_blank" rel="noopener noreferrer">Try live demo ↗</a>
+                <a href="https://github.com/Offx-suryansh/CINEVERSE" target="_blank" rel="noopener noreferrer">Find on GitHub ↗</a>
+              </div>
+            </div>
+            <div class="project-symbol" aria-hidden="true">🎬</div>
+          </article>
+          <article class="project-card">
+            <div class="project-index">05</div>
+            <div class="project-content">
+              <div class="project-topline">
+              <div class="project-image-box">
+                <img src="assets/project-nexus-hr.png" alt="NEXUS HR project preview" loading="lazy">
+                <span class="project-image-placeholder">ADD PROJECT IMAGE</span>
+              </div>
+                <span class="project-type">HR MANAGEMENT SYSTEM</span>
+                <span class="project-status">Live</span>
+              </div>
+              <h3>NEXUS HR</h3>
+              <p>
+                A full-stack Human Resource Management System for managing
+                employee records and departments. Built with a Spring Boot
+                backend, REST APIs, and a MySQL database, with a simple web interface.
+              </p>
+              <div class="tag-list">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>Spring Data JPA</span>
+                <span>MySQL</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a class="project-live-link" href="https://nexus-hr-full-stack.onrender.com" target="_blank" rel="noopener noreferrer">Try live demo ↗</a>
+                <a href="https://github.com/Offx-suryansh/Nexus-HR-Full-Stack" target="_blank" rel="noopener noreferrer">View repository ↗</a>
+              </div>
+            </div>
+            <div class="project-symbol" aria-hidden="true">✳</div>
+          </article>
+        </div>
+      </div>
+    </section>    <section class="section container" id="experience">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">04 / EXPERIENCE & LEARNING</p>
+          <h2>Learning beyond the classroom.</h2>
+        </div>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">NOV 2025 – JAN 2026</div>
+          <div>
+            <h3>Web Development Intern — Internboot</h3>
+            <p>
+              Remote internship involving hands-on learning and
+              assigned web development training projects.
+            </p>
+            <p class="timeline-note">
+              45-day internship · See the LinkedIn certificate below.
+            </p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">TRAINING</div>
+          <div>
+            <h3>AVR Bootcamp — NIELIT Ropar</h3>
+            <p>
+              Hands-on introduction to Augmented and Virtual Reality
+              concepts and tools.
+            </p>
+            <p class="timeline-note">
+              NIELIT Ropar · Certificate linked below.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="cert-box">
+        <div>
+          <p class="eyebrow">CERTIFICATES</p>
+          <h3>Courses & credentials</h3>
+        </div>
+        <div class="cert-content">
+          <div class="certificate-item">
+            <div>
+              <strong>AVR Bootcamp — NIELIT Ropar</strong>
+              <p>Training certificate · July 31, 2025</p>
+            </div>
+            <a class="certificate-link" href="https://lnkd.in/p/g96DqY8F" target="_blank" rel="noopener noreferrer">View certificate on LinkedIn ↗</a>
+          </div>
+          <div class="certificate-item">
+            <div>
+              <strong>Web Development Internship — Internboot</strong>
+              <p>45-day internship certificate · November 28, 2025 – January 12, 2026</p>
+            </div>
+            <a class="certificate-link" href="https://lnkd.in/p/gVNcTk8U" target="_blank" rel="noopener noreferrer">View certificate on LinkedIn ↗</a>
+          </div>
+          <div class="certificate-item">
+            <div>
+              <strong>AI Agents for Everyone & AI Bootcamp with 100 Hands-on Labs — Udemy</strong>
+              <p>35.5-hour AI and AI Agents bootcamp · July 15, 2026</p>
+            </div>
+            <a class="certificate-link" href="https://lnkd.in/p/gYdKTQRe" target="_blank" rel="noopener noreferrer">View certificate on LinkedIn ↗</a>
+          </div>
+          <div class="certificate-item">
+            <div>
+              <strong>SQL Server Foundations Course — ScholarHat</strong>
+              <p>SQL Server and database fundamentals</p>
+            </div>
+            <a class="certificate-link" href="https://lnkd.in/p/gZFqq2Wm" target="_blank" rel="noopener noreferrer">View certificate on LinkedIn ↗</a>
+          </div>
+          <div class="certificate-item">
+            <div>
+              <strong>MongoDB Foundations Course for Beginners — ScholarHat</strong>
+              <p>MongoDB and NoSQL database fundamentals</p>
+            </div>
+            <a class="certificate-link" href="https://lnkd.in/p/g34trjRb" target="_blank" rel="noopener noreferrer">View certificate on LinkedIn ↗</a>
+          </div>
+          <div class="certificate-item">
+            <div>
+              <strong>Life Skills (Jeevan Kaushal) 2.0 – Basic Level — Wadhwani Foundation</strong>
+              <p>60-hour life skills training</p>
+            </div>
+            <a class="certificate-link" href="https://lnkd.in/p/gex-qWk8" target="_blank" rel="noopener noreferrer">View certificate on LinkedIn ↗</a>
+          </div>
+          <div class="certificate-item">
+            <div>
+              <strong>CS105: Introduction to Python — Saylor Academy</strong>
+              <p>36-hour Python programming course · Completed July 8, 2025 · Final score: 98.42%</p>
+            </div>
+            <a class="certificate-link" href="https://lnkd.in/p/gsQ-YF9C" target="_blank" rel="noopener noreferrer">View certificate on LinkedIn ↗</a>
+          </div>
+          <p class="other-certificates">
+            Explore more certificates and professional updates on my
+            <a href="https://www.linkedin.com/in/offxsuryansh/" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section section-muted" id="resume">
+      <div class="container resume-panel">
+        <div>
+          <p class="eyebrow">05 / RESUME</p>
+          <h2>
+            A quick overview<br>
+            <span class="muted-heading">of my journey.</span>
+          </h2>
+          <p class="resume-copy">
+            Open a clean, print-ready resume with my education, skills,
+            projects, training and contact links. From the resume page,
+            use your browser’s Print option and choose “Save as PDF”.
+          </p>
+        </div>
+        <div class="resume-actions">
+          <a class="button button-primary" href="resume.html">View resume ↗</a>
+          <button class="button button-secondary" id="print-resume" type="button">
+            Print / Save as PDF
+          </button>
+          <p class="fine-print">
+            The resume is generated from the information on this portfolio.
+            Review dates and details before sending it to employers.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section container terminal-section" id="terminal">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">06 / EXPLORE</p>
+          <h2>A little developer terminal.</h2>
+        </div>
+        <p class="section-note">
+          Type <code>help</code> to see available commands.
+        </p>
+      </div>
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span></span>
+          <span></span>
+          <span></span>
+          <p>offx@portfolio: ~</p>
+        </div>
+        <div class="terminal-output" id="terminal-output" aria-live="polite">
+          <p>Welcome. This is a small, local portfolio terminal.</p>
+          <p>Type <code>help</code> to get started.</p>
+        </div>
+        <form class="terminal-form" id="terminal-form">
+          <label for="terminal-input">
+            <span aria-hidden="true">›</span>
+            <span class="sr-only">Terminal command</span>
+          </label>
+          <input
+            id="terminal-input"
+            name="command"
+            type="text"
+            autocomplete="off"
+            spellcheck="false"
+            placeholder="help"
+            aria-label="Enter a portfolio command"
+          >
+          <button type="submit">Run</button>
+        </form>
+      </div>
+    </section>
+    <section class="section contact-section" id="contact">
+      <div class="container contact-inner">
+        <p class="eyebrow">07 / CONTACT</p>
+        <h2>
+          Have a project or opportunity<br>
+          in mind?
+        </h2>
+        <p class="contact-copy">
+          I'm interested in learning, collaborating, and connecting with
+          people working on useful web projects.
+        </p>
+        <div class="email-row">
+          <a class="email-link" href="mailto:sharmasuryansh159@gmail.com">
+            sharmasuryansh159@gmail.com <span aria-hidden="true">↗</span>
+          </a>
+          <button
+            class="copy-email"
+            id="copy-email"
+            type="button"
+            data-email="sharmasuryansh159@gmail.com"
+          >
+            Copy email
+          </button>
+        </div>
+        <div class="contact-links">
+          <a href="https://github.com/Offx-suryansh" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/offxsuryansh/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://www.instagram.com/offx.suryansh/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+          <a href="https://cvin.bio/suryansh-sharma" target="_blank" rel="noopener noreferrer">CVIn.bio ↗</a>
+        </div>
+        <p class="privacy-note" id="copy-status" aria-live="polite">
+          For direct enquiries, email is the fastest way to reach me.
+        </p>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home">Suryansh<span>.</span></a>
+      <p>Designed and built with care by Suryansh Sharma.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
